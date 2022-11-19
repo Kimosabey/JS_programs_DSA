@@ -28,7 +28,7 @@ function duplicateCount(text) {
 function duplicateCount2(text) {
   return text
     .toLowerCase()
-    .split('')
+    .split("")
     .reduce(
       function (a, l) {
         a[l] = a[l] ? a[l] + 1 : 1;
@@ -42,11 +42,11 @@ function duplicateCount2(text) {
 // WTF wayy
 const duplicateCountWtf = (text) =>
   (text.match(/(\w)(?=(?!.*\1.*\1).*\1)/gi) || []).length;
-console.log(duplicateCount('KIIMMOO'));
-console.log(duplicateCount('KImosabey'));
-console.log('\n');
-console.log(duplicateCount2('KIIMMOO'));
-console.log(duplicateCount2('KImosabey'));
-console.log('\n');
-console.log(duplicateCountWtf('KIIMMOO'));
-console.log(duplicateCountWtf('KImosabey'));
+console.log(duplicateCount("KIIMMOO"));
+console.log(duplicateCount("KImosabey"));
+console.log("\n");
+console.log(duplicateCount2("KIIMMOO"));
+console.log(duplicateCount2("KImosabey"));
+console.log("\n");
+console.log(duplicateCountWtf("KIIMMOO"));
+console.log(duplicateCountWtf("KImosabey"));
