@@ -1,3 +1,5 @@
+// binarySearch
+
 let list = [100, 2, 4, 6, 1000, 22, 99];
 let item = 1000;
 
